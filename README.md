@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2509.06350"><img src="https://img.shields.io/badge/arXiv-Paper-red.svg" alt="arXiv"></a>
+  <a href="https://arxiv.org/abs/2509.06350" target="_blank"><img src="https://img.shields.io/badge/arXiv-Paper-red.svg" alt="arXiv"></a>
 </p>
 
 📢 **Update (January 2026)**: Our paper has been accepted to **ICASSP 2026!** 🎉
@@ -16,7 +16,7 @@
 
 
 
-## 📋 Overview
+## Overview
 
 This is the official implementation of the paper:
 
@@ -30,7 +30,7 @@ This is the official implementation of the paper:
 
 ![Overview](assets/figure1.png)
 
-## ⚠️ Ethical Considerations
+## Ethical Considerations
 
 Due to the sensitive nature of adversarial attack research, we do not distribute harmful content datasets directly. Please download the required data from the original sources:
 
@@ -40,7 +40,7 @@ Due to the sensitive nature of adversarial attack research, we do not distribute
 | **AmpleGCG Datasets** | [HuggingFace](https://huggingface.co/osunlp/AmpleGCG-llama2-sourced-llama2-7b-chat) | Generated suffixes produced by AmpleGCG |
 | **I-GCG Datasets** | [Github](https://github.com/jiaxiaojunQAQ/I-GCG/tree/main) | I-GCG initialization suffix |
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Configuration
 
@@ -86,7 +86,7 @@ LAMBDA_REG = 0.2
 PRUNING_THRESHOLD = 0.2
 ```
 
-##  Results
+## Results
 
 ### Suffix Compression Ratio (SCR)
 
@@ -117,7 +117,7 @@ PRUNING_THRESHOLD = 0.2
 
 *For detailed experimental results, please refer to our paper.*
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Mask-GCG-main/
@@ -133,7 +133,7 @@ Mask-GCG-main/
         └── opt_utils.py
 ```
 
-## 📖 Citation
+## Citation
 
 If you find this work useful, please cite our paper:
 
