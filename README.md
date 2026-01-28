@@ -11,7 +11,7 @@
   <a href="https://arxiv.org/abs/2509.06350"><img src="https://img.shields.io/badge/arXiv-Paper-red.svg" alt="arXiv"></a>
 </p>
 
-📢 **Update (January 2026)**: Our paper has been accepted to ICASSP 2026! 🎉
+📢 **Update (January 2026)**: Our paper has been accepted to **ICASSP 2026!** 🎉
 
 
 
@@ -90,37 +90,37 @@ PRUNING_THRESHOLD = 0.2
 
 ### Suffix Compression Ratio (SCR)
 
-| Target Model | GCG+Mask (Suffix=20) | GCG+Mask (Suffix=30) | AmpleGCG+Mask (Suffix=20) | AmpleGCG+Mask (Suffix=30) |
-|--------------|----------------------|----------------------|---------------------------|---------------------------|
-| Llama-2-7b   | 5.8%                 | 9.9%                 | 2.0%                      | 1.7%                      |
-| Vicuna-7b    | 1.4%                 | 2.1%                 | 6.5%                      | 4.1%                      |
-| Llama-2-13b  | 5.2%                 | 10.5%                | 5.1%                      | 4.7%                      |
-| **Average**  | **4.1%**             | **7.5%**             | **4.5%**                  | **3.5%**                  |
+| Model | GCG+Mask (L=20) | GCG+Mask (L=30) | AmpleGCG+Mask (L=20) | AmpleGCG+Mask (L=30) |
+|-------|-----------------|-----------------|----------------------|----------------------|
+| Llama-2-7b | 5.8% | 9.9% | 2.0% | 1.7% |
+| Vicuna-7b | 1.4% | 2.1% | 6.5% | 4.1% |
+| Llama-2-13b | 5.2% | 10.5% | 5.1% | 4.7% |
+| **Average** | **4.1%** | **7.5%** | **4.5%** | **3.5%** |
 
-### Attack Success Rate (ASR) (Suffix=30)
+### Attack Success Rate (ASR) (Suffix Length=30)
 
-| Target Model | GCG | +Mask-GCG | AmpleGCG | +Mask-GCG |
-|--------------|-----|-----------|----------|-----------|
-| Llama-2-7b   | 64% | 62%       | 98%      | 98%       |
-| Vicuna-7b    | 100%| 96%       | 100%     | 100%      |
-| Llama-2-13b  | 80% | 76%       | 100%     | 98%       |
-| **Average**  | **81%** | **78%** | **99%** | **99%** |
+| Model | GCG | +Mask | AmpleGCG | +Mask |
+|-------|-----|-------|----------|-------|
+| Llama-2-7b | 64% | 62% | 98% | 98% |
+| Vicuna-7b | 100% | 96% | 100% | 100% |
+| Llama-2-13b | 80% | 76% | 100% | 98% |
+| **Average** | **81%** | **78%** | **99%** | **99%** |
 
 ### Time Reduction (seconds)
 
-| Model        | GCG      | Mask-GCG | Reduction |
-|--------------|----------|----------|-----------|
-| Llama-2-7b   | 1285.6   | 819.3    | -36.3%    |
-| Vicuna-7b    | 117.0    | 116.1    | -0.8%     |
-| Llama-2-13b  | 1960.2   | 1856.2   | -5.3%     |
-| **Average**  | 1120.9   | 930.5    | **-17.0%**|
+| Model | GCG | Mask-GCG | Reduction |
+|-------|-----|----------|-----------|
+| Llama-2-7b | 1285.6 | 819.3 | -36.3% |
+| Vicuna-7b | 117.0 | 116.1 | -0.8% |
+| Llama-2-13b | 1960.2 | 1856.2 | -5.3% |
+| **Average** | 1120.9 | 930.5 | **-17.0%** |
 
 *For detailed experimental results, please refer to our paper.*
 
 ## 📁 Project Structure
 
 ```
-mask_gcg/
+Mask-GCG-main/
 ├── config.py              # Configuration file
 ├── run_attack.py          # Main entry point
 ├── mask_gcg_utils.py      # Core Mask-GCG utilities
